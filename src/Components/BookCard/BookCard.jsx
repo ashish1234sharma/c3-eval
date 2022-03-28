@@ -6,9 +6,9 @@ export const BookCard = ({ id, imageUrl, title,section }) => {
 
   return (
     <Link to={`/books/${id}`} > <div className="movie_card"> 
-    <img src={imageUrl} alt="" />
-    <p><b>Title: </b>{title}</p>
-    <p><b>Section: </b>{section}</p>
+    <img className="image" src={imageUrl} alt="" />
+    <p className="title"><b>Title: </b>{title}</p>
+    <p className="section"><b>Section: </b>{section}</p>
     </div></Link>
     
   )
